@@ -1,0 +1,42 @@
+{
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "aws.route53.childhealthcheckhealthycount.*",
+        "properties": {
+          "STATISTIC": "avg",
+          "tags": {
+            "unit": "count"
+          }
+        }
+      },
+      {
+        "match": "aws.route53.(connectiontime|sslhandshaketime|timetofirstbyte).*",
+        "properties": {
+          "STATISTIC": "avg"
+        }
+      },
+      {
+        "match": "aws.route53.healthcheckpercentagehealthy.*",
+        "properties": {
+          "STATISTIC": "min",
+          "tags": {
+            "unit": "percent"
+          },
+          "validMax": 100
+        }
+      },
+      {
+        "match": "aws.route53.healthcheckstatus.*",
+        "properties": {
+          "STATISTIC": "min"
+        }
+      }
+    ],
+    "name": "Route53",
+    "scope": {
+      "elementType": "Route53HealthCheck"
+    },
+    "type": "METRIC_META"
+  }
+}
