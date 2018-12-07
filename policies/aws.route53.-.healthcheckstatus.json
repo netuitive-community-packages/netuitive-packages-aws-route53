@@ -10,8 +10,8 @@
       {
         "analytic": "actual",
         "level": 1,
-        "wildcard": "aws.route53.healthcheckstatus.*",
-        "operator": "<"
+        "operator": "<",
+        "wildcard": "aws.route53.healthcheckstatus.*"
       }
     ],
     "deleted": false,
