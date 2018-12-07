@@ -37,5 +37,12 @@
         "content" : null
       }
     } 
-    ]
+    ],
+    "dashboards" : [ {
+      "data" : {
+        "file" : "dashboards/route53.element.detail.json",
+        "encoding" : "application/json",
+        "content" : null
+      }
+    } ]
   }
