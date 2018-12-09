@@ -36,6 +36,12 @@
         "encoding" : "application/json",
         "content" : null
       }
+    }, {
+      "data" : {
+        "file" : "analyticConfigurations/computed_metric-route53.json",
+        "encoding" : "application/json",
+        "content" : null
+      }
     } 
     ],
     "dashboards" : [ {

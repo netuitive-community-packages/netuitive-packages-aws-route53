@@ -21,7 +21,7 @@
     "name": "Route53 - HealthCheckStatus",
     "scope": {
       "elementTypes": [
-        "Route53HealthCheck"
+        "ROUTE53HEALTHCHECK"
       ]
     }
   }
