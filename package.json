@@ -22,6 +22,18 @@
         "encoding" : "application/json",
         "content" : null
       }
+    }, {
+      "data" : {
+        "file" : "policies/aws.route53.-.timetofirstbyte.json",
+        "encoding" : "application/json",
+        "content" : null
+      }
+    }, {
+      "data" : {
+        "file" : "policies/aws.route53.-.connectiontime.json",
+        "encoding" : "application/json",
+        "content" : null
+      }
     }
     ],
     "analyticConfigurations" : [ {
