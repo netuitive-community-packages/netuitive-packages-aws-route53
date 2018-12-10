@@ -12,7 +12,7 @@
     ],
     "name": "Route53",
     "scope": {
-      "elementType": "ROUTE53HEALTHCHECK"
+      "elementType": "Route53HealthCheck"
     },
     "type": "COMPUTED_METRIC"
   }

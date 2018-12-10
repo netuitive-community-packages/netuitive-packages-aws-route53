@@ -20,7 +20,7 @@
     "name": "Route53 - TimeToFirstByte",
     "scope": {
       "elementTypes": [
-        "ROUTE53HEALTHCHECK"
+        "Route53HealthCheck"
       ]
     }
   }
