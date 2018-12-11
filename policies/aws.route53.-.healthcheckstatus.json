@@ -15,7 +15,7 @@
       }
     ],
     "deleted": false,
-    "description": "The status of the health check endpoint that CloudWatch is checking. 1 indicates healthy, and 0 indicates unhealthy. You can view HealthCheckStatus only across all regions; data is not available for a selected region.",
+    "description": "HealthCheckStatus is higher than usual. HealthCheckStatus is the status of the health check endpoint that CloudWatch is checking. 1 indicates healthy, and 0 indicates unhealthy. You can view HealthCheckStatus only across all regions; data is not available for a selected region.",
     "duration": 900,
     "enabled": true,
     "name": "Route53 - HealthCheckStatus",
