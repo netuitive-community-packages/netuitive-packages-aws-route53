@@ -3,7 +3,7 @@
     "name": "Route53 Element Detail",
     "private": false,
     "properties": {
-      "gridstackContents": "[{\"id\":\"3e520555-3fe8-4333-9b24-6e58ade95ec6\",\"x\":0,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"b4abc590-47ec-4932-ab7e-d5610d5df4d3\",\"x\":6,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"6952af6d-0960-423c-b941-c0679252a94d\",\"x\":0,\"y\":10,\"width\":6,\"height\":9},{\"id\":\"4bda9103-e352-47cb-9d38-78c793a7870e\",\"x\":6,\"y\":10,\"width\":6,\"height\":9},{\"id\":\"7b094843-a0ab-450b-803f-986a169a46af\",\"x\":0,\"y\":20,\"width\":6,\"height\":9},{\"id\":\"828e7ee3-7562-4b2d-a655-bd108f8a8b66\",\"x\":6,\"y\":20,\"width\":6,\"height\":9},{\"id\":\"f9005ff9-cb42-47ef-ba9d-9b55b9ac7245\",\"x\":0,\"y\":30,\"width\":6,\"height\":9}]",
+      "gridstackContents": "[{\"id\":\"3e520555-3fe8-4333-9b24-6e58ade95ec6\",\"x\":0,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"b4abc590-47ec-4932-ab7e-d5610d5df4d3\",\"x\":6,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"6952af6d-0960-423c-b941-c0679252a94d\",\"x\":0,\"y\":10,\"width\":6,\"height\":9},{\"id\":\"4bda9103-e352-47cb-9d38-78c793a7870e\",\"x\":6,\"y\":10,\"width\":6,\"height\":9},{\"id\":\"7b094843-a0ab-450b-803f-986a169a46af\",\"x\":0,\"y\":20,\"width\":6,\"height\":9},{\"id\":\"828e7ee3-7562-4b2d-a655-bd108f8a8b66\",\"x\":6,\"y\":20,\"width\":6,\"height\":9},{\"id\":\"f9005ff9-cb42-47ef-ba9d-9b55b9ac7245\",\"x\":0,\"y\":30,\"width\":6,\"height\":9},{\"id\":\"53009f24-761a-4fdf-bff5-4c1cd26188c2\",\"x\":6,\"y\":30,\"width\":6,\"height\":9}]",
       "refreshIntervalSeconds": "300",
       "timeRangeDuration": "3600",
       "wrap": "true"
@@ -162,6 +162,35 @@
         },
         "updated": "2018-12-07T13:33:33Z",
         "widgetType": "events"
+      },
+      {
+        "created": "2018-12-11T00:41:28Z",
+        "generated": false,
+        "id": "53009f24-761a-4fdf-bff5-4c1cd26188c2",
+        "name": "HealthCheckStatus all regions (min)",
+        "properties": {
+          "colorByMetric": "false",
+          "elementScopeTypes": "[\"Route53HealthCheck\"]",
+          "groupByPolicy": "false",
+          "grouping": "attribute=SERVICE",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"aws.route53.healthcheckstatus.min\",\"useRegex\":false,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+          "notificationEmail": "dmytro.yashchenko@gmail.com",
+          "notificationPeriod": "off",
+          "period": "latest1",
+          "showBands": "true",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricAgg\":null,\"metricUnit\":null}]",
+          "topNLimit": "5",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "area"
+        },
+        "updated": "2018-12-11T00:43:01Z",
+        "widgetType": "multi-metric"
       }
     ]
   }
