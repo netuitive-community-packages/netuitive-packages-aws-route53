@@ -2,10 +2,10 @@
   "analyticConfiguration": {
     "metrics": [
       {
-        "match": "aws.route53.healthecheckstatus.min",
+        "match": "aws.route53.healthcheckstatus.min",
         "properties": {
-          "expression": "data.min('aws.route53.healthecheckstatus.*')",
-          "fqn": "aws.route53.healthecheckstatus.min",
+          "expression": "data.min('aws.route53.healthcheckstatus.*')",
+          "fqn": "aws.route53.healthcheckstatus.min",
           "name": "Indicating if any regions are unhealthy"
         }
       }
