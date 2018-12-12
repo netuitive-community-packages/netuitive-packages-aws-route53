@@ -167,7 +167,7 @@
         "created": "2018-12-11T00:41:28Z",
         "generated": false,
         "id": "53009f24-761a-4fdf-bff5-4c1cd26188c2",
-        "name": "HealthCheckStatus all regions (min)",
+        "name": "HealthCheckStatus the sum of unhealthy regions.",
         "properties": {
           "colorByMetric": "false",
           "elementScopeTypes": "[\"Route53HealthCheck\"]",
