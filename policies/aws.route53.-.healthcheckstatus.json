@@ -10,12 +10,12 @@
       {
         "analytic": "actual",
         "level": 1,
-        "operator": "<",
-        "wildcard": "aws.route53.healthcheckstatus.*"
+        "metric": "aws.route53.healthcheckstatus",
+        "operator": "<"
       }
     ],
     "deleted": false,
-    "description": "HealthCheckStatus is higher than usual. HealthCheckStatus is the status of the health check endpoint that CloudWatch is checking. 1 indicates healthy, and 0 indicates unhealthy. You can view HealthCheckStatus only across all regions; data is not available for a selected region.",
+    "description": "The Health Check failed. HealthCheckStatus is the status of the health check endpoint that CloudWatch is checking. 1 indicates healthy, and 0 indicates unhealthy.",
     "duration": 900,
     "enabled": true,
     "name": "Route53 - HealthCheckStatus",

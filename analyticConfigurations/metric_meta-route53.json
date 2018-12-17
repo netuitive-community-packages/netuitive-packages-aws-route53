@@ -2,7 +2,7 @@
   "analyticConfiguration": {
     "metrics": [
       {
-        "match": "aws.route53.childhealthcheckhealthycount.*",
+        "match": "aws.route53.childhealthcheckhealthycount",
         "properties": {
           "STATISTIC": "avg",
           "tags": {
@@ -11,13 +11,13 @@
         }
       },
       {
-        "match": "aws.route53.(connectiontime|sslhandshaketime|timetofirstbyte).*",
+        "match": "aws.route53.(connectiontime|sslhandshaketime|timetofirstbyte)",
         "properties": {
           "STATISTIC": "avg"
         }
       },
       {
-        "match": "aws.route53.healthcheckpercentagehealthy.*",
+        "match": "aws.route53.healthcheckpercentagehealthy",
         "properties": {
           "STATISTIC": "min",
           "tags": {

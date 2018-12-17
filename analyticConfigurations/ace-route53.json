@@ -2,28 +2,28 @@
   "analyticConfiguration": {
     "metrics": [
       {
-        "match": "aws.route53.healthcheckstatus.*",
+        "match": "aws.route53.healthcheckstatus",
         "properties": {
           "baseline": false,
           "correlation": false
         }
       },
       {
-        "match": "aws.route53.healthcheckpercentagehealthy.*",
+        "match": "aws.route53.healthcheckpercentagehealthy",
         "properties": {
           "baseline": true,
           "correlation": false
         }
       },
       {
-        "match": "aws.route53.connectiontime.*",
+        "match": "aws.route53.connectiontime",
         "properties": {
           "baseline": true,
           "correlation": true
         }
       },
       {
-        "match": "aws.route53.timetofirstbyte.*",
+        "match": "aws.route53.timetofirstbyte",
         "properties": {
           "baseline": true,
           "correlation": true

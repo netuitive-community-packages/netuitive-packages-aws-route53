@@ -9,12 +9,12 @@
     "conditions": [
       {
         "analytic": "baselineDeviation",
-        "operator": ">",
-        "wildcard": "aws.route53.timetofirstbyte.*"
+        "metric": "aws.route53.timetofirstbyte",
+        "operator": ">"
       }
     ],
     "deleted": false,
-    "description": "TimeToFirstByte is higher than usual. TimeToFirstByte is the average time, in milliseconds, that it took Route 53 health checkers to receive the first byte of the response to an HTTP or HTTPS request. You can view TimeToFirstByte for a health check either across all regions or for a selected geographic region.",
+    "description": "TimeToFirstByte is higher than usual. TimeToFirstByte is the average time, in milliseconds, that it took Route 53 health checkers to receive the first byte of the response to an HTTP or HTTPS request.",
     "duration": 900,
     "enabled": false,
     "name": "Route53 - TimeToFirstByte",
