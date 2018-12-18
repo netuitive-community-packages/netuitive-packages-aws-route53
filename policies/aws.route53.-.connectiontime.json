@@ -1,0 +1,27 @@
+{
+  "policy": {
+    "actions": [
+      {
+        "category": 2,
+        "type": "event"
+      }
+    ],
+    "conditions": [
+      {
+        "analytic": "baselineDeviation",
+        "metric": "aws.route53.connectiontime",
+        "operator": ">"
+      }
+    ],
+    "deleted": false,
+    "description": "ConnectionTime is higher than usual. ConnectionTime is the average time, in milliseconds, that it took Route 53 health checkers to establish a TCP connection with the endpoint.",
+    "duration": 900,
+    "enabled": false,
+    "name": "Route53 - ConnectionTime",
+    "scope": {
+      "elementTypes": [
+        "Route53HealthCheck"
+      ]
+    }
+  }
+}

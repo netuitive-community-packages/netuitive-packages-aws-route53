@@ -1,0 +1,28 @@
+{
+  "policy": {
+    "actions": [
+      {
+        "category": 3,
+        "type": "event"
+      }
+    ],
+    "conditions": [
+      {
+        "analytic": "actual",
+        "level": 1,
+        "metric": "aws.route53.healthcheckstatus",
+        "operator": "<"
+      }
+    ],
+    "deleted": false,
+    "description": "The Health Check failed. HealthCheckStatus is the status of the health check endpoint that CloudWatch is checking. 1 indicates healthy, and 0 indicates unhealthy.",
+    "duration": 900,
+    "enabled": true,
+    "name": "Route53 - HealthCheckStatus",
+    "scope": {
+      "elementTypes": [
+        "Route53HealthCheck"
+      ]
+    }
+  }
+}
