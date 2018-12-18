@@ -1,0 +1,27 @@
+{
+  "policy": {
+    "actions": [
+      {
+        "category": 2,
+        "type": "event"
+      }
+    ],
+    "conditions": [
+      {
+        "analytic": "baselineDeviation",
+        "metric": "aws.route53.timetofirstbyte",
+        "operator": ">"
+      }
+    ],
+    "deleted": false,
+    "description": "TimeToFirstByte is higher than usual. TimeToFirstByte is the average time, in milliseconds, that it took Route 53 health checkers to receive the first byte of the response to an HTTP or HTTPS request.",
+    "duration": 900,
+    "enabled": false,
+    "name": "Route53 - TimeToFirstByte",
+    "scope": {
+      "elementTypes": [
+        "Route53HealthCheck"
+      ]
+    }
+  }
+}

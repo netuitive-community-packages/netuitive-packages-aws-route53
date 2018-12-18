@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- '8'
+install:
+- npm i -g metricly-cli
+script:
+- metricly package validate && metricly package lint
+notifications:
+  slack:
+    secure: swx8CJjnRxbp3Hg1+ndvnWHSw07L9+Vi6/tAoHqDEXKT0eRUEJw3penM7KrxQwttQCA5dclf9qqSoZd2so8kzk68f95Oe4tihjQhetbc/8B83b2rQ/1nfnovAK+b2NrgK86XcA6vdlLHPRHYQGt/wmUDh9fRBcOJiZsG2x95rJ+icr95dtbd6BCdsU2UwMYyRWTWpmIzURKOWStGr1RD9MvTnLfX6+O77lyj1gatUTLGAJ3Xw4hclUFN7fp5fUHdVgzeidIFCvkYP89IJWA7JthKZr9nQ6WP8+CPBGwC9HP1vjvrz6DhxKG3M9hcU6xuCucM2K4ZGZ5DH7+q4e9tE/U2/a0iszNcEHCsWy9xOK7McXDvnQ388N6/+n+KSR6nEJUPjBvLpUKakVFBlAIVb8XSvf8KfyipboRFf20rK6r18QYwUpVBWcPjmhBtvlB0dBfAg8ZiNPX/IKyGrHS+umCs0TuESoeJmXdxyBloRDL1SMa3aQMwSa3NyOeFP5zwfk60Zn4c8OgzMFxcS6s56oQshm2js21jgXFM4QCC5OxYKN885G8DSOIM3kdxZvv119gpPz+lnt68uYQiQpupd+72tBXOI++APqVFwlIwKE/iuKqSDJ/vJYFBXN7MrftTWBXaMgw91SX6ACU9sDXH061dOCDE+lQVEk8dP7vjNmU=

@@ -1,0 +1,39 @@
+{
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "aws.route53.healthcheckstatus",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "aws.route53.healthcheckpercentagehealthy",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "aws.route53.connectiontime",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "aws.route53.timetofirstbyte",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      }
+    ],
+    "name": "Route53",
+    "scope": {
+      "elementType": "Route53HealthCheck"
+    },
+    "type": "ACE"
+  }
+}
